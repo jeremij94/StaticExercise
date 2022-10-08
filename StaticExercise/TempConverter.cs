@@ -1,18 +1,30 @@
 ﻿using System;
+using StaticExercise;
+
 namespace StaticExercise
 {
     public static class TempConverter
     {
-        public static double FahrenheitToCelsius(double fahrenheit)
+        public static double FahrenheitToCelsius(double numToConv)
         {
-            var result = (fahrenheit - 32) / 1.8;
 
-            return result;
+            var fConversion = (numToConv - 32) / 1.8;
+            Console.WriteLine(fConversion);
+            return fConversion;
+
         }
 
-        public static double CelsiusToFahrenheit(double celsius)
+
+        public static double CelsiusToFahrenheit(double numToConv)
         {
-            return (celsius * 9) / 5 + 32;
+            var cConversion = (numToConv * 1.8) + 32;
+            Console.WriteLine(cConversion);
+            return cConversion;
         }
     }
 }
+
+
+
+
+
